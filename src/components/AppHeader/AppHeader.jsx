@@ -28,7 +28,7 @@ export default function AppHeader() {
                             <a href="/subscription" className="header__link">Subscription</a>
                         </li>
                         <li className="header__item">
-                            <a href="/login" className="header__link header__link--login">Iniciar Sesion</a>
+                            <a href="/login" className="header__link header__link--login">Sign up</a>
                         </li>
                     </ul>
                 </li>
@@ -55,7 +55,7 @@ export default function AppHeader() {
                     <a href="/subscription" className="header__link">Subscription</a>
                 </li>
                 <li className="header__item">
-                    <a href="/login" className="header__link header__link--login">Iniciar Sesion</a>
+                    <a href="/login" className="header__link header__link--login">Sign up</a>
                 </li>
             </ul>
         </nav>

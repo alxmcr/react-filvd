@@ -49,7 +49,7 @@
 }
 
 .banner__title {
-    color: var(--brand-strong-color);
+    color: var(--brand-color);
     font-size: 4rem;
     font-weight: bold;
 }
