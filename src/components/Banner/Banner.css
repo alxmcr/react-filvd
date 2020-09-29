@@ -1,0 +1,48 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.banner__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+    width: 55%;
+}
+
+.banner__link {
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.banner__link:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.banner__link--primary{
+    background-color: aquamarine;
+}
+
+.banner__link--secondary{
+    background-color: gold;
+}
+
+.banner__title {
+    color: red;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner__title, .banner__subtitle {
+    text-align: center;
+}
