@@ -1,3 +1,7 @@
+:root {
+    --brand-color: rgb(174, 255, 174);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

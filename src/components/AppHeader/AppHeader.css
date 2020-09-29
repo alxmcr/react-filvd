@@ -25,7 +25,10 @@
 }
 
 .header__link--brand {
+    background-color: black;
+    color: var(--brand-color);
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .header__link--login {
@@ -34,6 +37,7 @@
 }
 
 .header__link--login:hover {
+    background-color: gold;
     color: black;
 }
 
