@@ -6,7 +6,7 @@ import './AppHeader.css'
 export default function AppHeader() {
     return <header>
         <nav className="header__nav" role="navigation" aria-label="main navigation">
-            <ul className="header__menu  header__menu--desktop">
+            <ul className={`header__menu  header__menu--desktop`}>
                 <li className="header__item">
                     <a href="/" className="header__link header__link--brand">Filvd</a>
                 </li>
@@ -33,7 +33,7 @@ export default function AppHeader() {
                 </li>
             </ul>
 
-            <ul className="header__menu header__menu--mobile">
+            <ul className={`header__menu header__menu--mobile`}>
                 <li className="header__item header__item--close">
                     <i className="header__icon header__icon--close">
                         <FontAwesomeIcon icon={faTimes} />
