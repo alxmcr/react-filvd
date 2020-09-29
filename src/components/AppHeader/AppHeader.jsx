@@ -26,15 +26,15 @@ export default function AppHeader() {
                         </li>
                     </ul>
                 </li>
-                <li className="header__item">
-                    <i className="header__icon header__icon--menu">
+                <li className="header__item header__item--bars">
+                    <i className="header__icon header__icon--bars">
                         <FontAwesomeIcon icon={faBars} />
                     </i>
                 </li>
             </ul>
 
             <ul className="header__menu header__menu--mobile">
-                <li className="header__item">
+                <li className="header__item header__item--close">
                     <i className="header__icon header__icon--close">
                         <FontAwesomeIcon icon={faTimes} />
                     </i>

@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.header__icon:hover {
+    cursor: pointer;
+}
+
 .header__link {
     display: block;
     color: black;
@@ -20,13 +24,18 @@
     cursor: pointer;
 }
 
-.header__link--brand{
+.header__link--brand {
     font-size: 2rem;
 }
 
-.header__link--login{
+.header__link--login {
     background-color: black;
     color: white;
+}
+
+.header__link--login:hover {
+    background-color: gold;
+    color: black;
 }
 
 .header__nav {
@@ -38,26 +47,38 @@
     list-style-position: inside;
 }
 
-.header__menu--desktop {
+.header__menu--desktop, .header__submenu--desktop {
+    align-items: center;
     background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    text-align: center;
 }
 
 .header__menu--mobile {
     background-color: darkorange;
 }
 
+.header__submenu--desktop {
+    display: none;
+}
+
 /* // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-    .header__menu--desktop {
-        background-color: chartreuse;
+    .header__item--bars{
+        display: none;
     }
-    .header__submenu--desktop, .header__menu--desktop {
-        align-items: center;
+    
+    .header__menu--desktop {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 30px;
-        text-align: center;
+    }
+    .header__menu--mobile {
+        display: none;
+    }
+    .header__submenu--desktop {
+        display: flex;
     }
 }
