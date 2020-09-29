@@ -37,7 +37,7 @@
 }
 
 .header__link--login:hover {
-    background-color: gold;
+    background-color: var(--brand-color);
     color: black;
 }
 

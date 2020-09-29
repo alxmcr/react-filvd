@@ -1,25 +1,30 @@
 .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: rgb(68, 67, 57);
     height: 80vh;
     text-align: center;
 }
 
 .banner__actions {
+    padding: 10px;
+}
+
+.banner, .banner__actions {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    margin: 10px auto;
-    width: 55%;
+}
+
+.banner__brand {
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .banner__link {
-    border-radius: 10px;
     color: black;
+    display: block;
+    font-size: 1.2rem;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     text-decoration: none;
 }
 
@@ -30,19 +35,35 @@
 }
 
 .banner__link--primary {
-    background-color: aquamarine;
+    background-color: var(--brand-color);
 }
 
 .banner__link--secondary {
-    background-color: gold;
+    background-color: rgb(35, 144, 109);
+    color: white;
+}
+
+.banner__subtitle {
+    color: white;
 }
 
 .banner__title {
-    color: var(--brand-color);
+    color: var(--brand-strong-color);
     font-size: 4rem;
     font-weight: bold;
 }
 
-.banner__title, .banner__subtitle {
-    text-align: center;
+@media screen and (min-width: 768px) {
+    .banner__actions {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+        /* width: 20%; */
+    }
+    .banner__link {
+        margin: 0 5px;
+    }
 }
