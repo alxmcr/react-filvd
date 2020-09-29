@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import './AppHeader.css'
 
 export default function AppHeader() {
+
+    const [classNameMenu, setClassNameMenu] = useState("hidden");
+
+    const openMenuMobile = () => setClassNameMenu("show")
+    const closeMenuMobile = () => setClassNameMenu("hidden")
+
     return <header>
         <nav className="header__nav" role="navigation" aria-label="main navigation">
             <ul className={`header__menu  header__menu--desktop`}>
@@ -26,15 +32,15 @@ export default function AppHeader() {
                         </li>
                     </ul>
                 </li>
-                <li className="header__item header__item--bars">
+                <li className="header__item header__item--bars" onClick={openMenuMobile}>
                     <i className="header__icon header__icon--bars">
                         <FontAwesomeIcon icon={faBars} />
                     </i>
                 </li>
             </ul>
 
-            <ul className={`header__menu header__menu--mobile`}>
-                <li className="header__item header__item--close">
+            <ul className={`header__menu header__menu--mobile ${classNameMenu}`}>
+                <li className="header__item header__item--close" onClick={closeMenuMobile}>
                     <i className="header__icon header__icon--close">
                         <FontAwesomeIcon icon={faTimes} />
                     </i>
