@@ -20,6 +20,7 @@
 }
 
 .banner__link {
+    border-radius: 10px;
     color: black;
     display: block;
     font-size: 1.2rem;
