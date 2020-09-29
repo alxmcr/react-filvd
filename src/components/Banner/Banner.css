@@ -23,22 +23,22 @@
     text-decoration: none;
 }
 
-.banner__link:hover{
+.banner__link:hover {
     background-color: black;
     color: white;
     cursor: pointer;
 }
 
-.banner__link--primary{
+.banner__link--primary {
     background-color: aquamarine;
 }
 
-.banner__link--secondary{
+.banner__link--secondary {
     background-color: gold;
 }
 
 .banner__title {
-    color: red;
+    color: var(--brand-color);
     font-size: 4rem;
     font-weight: bold;
 }
