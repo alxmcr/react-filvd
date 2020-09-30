@@ -6,8 +6,21 @@ import './GenreList.css'
 
 export default function GenreList() {
     const genreList = useGenres();
-    // Limit to 5 register
-    const firstFiveRegister = genreList.slice(0, 5);
+
+    // check is array
+    const limitGenres = 5;
+    let firstFiveRegister = [];
+    if (Array.isArray(genreList)) {
+        if (genreList !== null || genreList !== undefined) {
+            if (genreList.length > limitGenres) {
+                // Limit to limitGenres register
+                firstFiveRegister = genreList.slice(0, limitGenres);
+            } else {
+                firstFiveRegister = [...genreList];
+            }
+        }
+    }
+
 
     return <section className="genres">
         {

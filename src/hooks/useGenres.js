@@ -4,6 +4,7 @@ function useGenres() {
     const [genresList, setGenresList] = useState([]);
 
     // API KEY
+    console.log(process.env)
     const { REACT_APP_API_KEY_TMDB } = process.env;
     // Build URL
     const resource = 'genre';
