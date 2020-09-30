@@ -1,0 +1,13 @@
+.moviesbygenre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 765px) {
+    .moviesbygenre {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+}
