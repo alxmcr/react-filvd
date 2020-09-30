@@ -6,10 +6,12 @@ import './GenreList.css'
 
 export default function GenreList() {
     const genreList = useGenres();
+    // Limit to 5 register
+    const firstFiveRegister = genreList.slice(0, 5);
 
-    return <section>
+    return <section className="genres">
         {
-            genreList.map(({ id, name }) => <Genre key={id} id={id} name={name} />)
+            firstFiveRegister.map(({ id, name }) => <Genre key={id} id={id} name={name} />)
         }
     </section>
 }
